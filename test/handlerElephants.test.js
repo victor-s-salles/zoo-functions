@@ -16,7 +16,10 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se passando averageAge retorna a media de idades dos elefantes', () => {
     expect(handlerElephants('averageAge')).toBe(10.5);
   });
-  it('Testa se passado names retorna um array com todos os nomes dos elefantes', ()=>{
-    expect(handlerElephants('names')).toEqual([ 'Ilana', 'Orval', 'Bea', 'Jefferson' ])
-  })
+  it('Testa se passado names retorna um array com todos os nomes dos elefantes', () => {
+    expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
+  });
+  it('Testa se passando uma string com um parametro inválido retorna Null', () => {
+    expect(handlerElephants('abc')).toBe(null);
+  });
 });
