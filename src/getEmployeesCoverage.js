@@ -12,8 +12,6 @@ const getSpecies = (id) => {
   return [names, locations];
 };
 
-getSpecies('c1f50212-35a6-4ecd-8223-f835538526c2');
-
 const listCollaborators = () => {
   const newList = collaborators.map((element) => ({
     id: element.id,
