@@ -2,10 +2,10 @@ const getOpeningHours = require('../src/getOpeningHours');
 
 describe('Testes da função getOpeningHours', () => {
   it('Testa se dado um horario valido de funcionamento ele retorna que esta aberto ou fechado', () => {
-    expect(getOpeningHours('Tuesday', '12:45-AM')).toBe('The zoo is closed');
-    expect(getOpeningHours('Wednesday', '01:45-PM')).toBe('The zoo is open');
-    expect(getOpeningHours('Tuesday', '09:00-AM')).toBe('The zoo is open');
-    expect(getOpeningHours('Monday', '12:45-PM')).toBe('The zoo is closed');
+    expect(getOpeningHours('Tuesday', '12:00-AM')).toBe('The zoo is closed');
+    expect(getOpeningHours('Monday', '12:00-AM')).toBe('The zoo is closed');
+    expect(getOpeningHours('Friday', '10:00-AM')).toBe('The zoo is open');
+    expect(getOpeningHours('Sunday', '06:00-PM')).toBe('The zoo is open');
   });
   it('Testa se passado um parametro de forma errada ele lança o erro correto', () => {
     expect(() => getOpeningHours('Thursday', '20:45-SP')).toThrow(/^The abbreviation must be 'AM' or 'PM'$/);
