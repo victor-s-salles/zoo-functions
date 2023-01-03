@@ -2,7 +2,7 @@ Segundo projeto feito na Trybe para o treinamento de funções em JavaScript pur
 
 As funções handlerElephants e getOpeningHours estão com 100% de cobetura de testes.
 
-Após o git clone do repositorio git@github.com:victor-s-salles/playground-functions.git
+Após o git clone do repositorio "git@github.com:victor-s-salles/playground-functions.git", é possivel rodar o código usando a extensão Code Runner do VsCode.
 
 As funções estão separadas em arquivos distintos.
 
